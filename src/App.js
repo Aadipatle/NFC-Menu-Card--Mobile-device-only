@@ -15,7 +15,6 @@ import edli from "./assets/edli.jpeg";
 import logo from "./assets/logo.jpeg";
 import { Link } from 'react-router-dom';
 
-// Single array of food items with a 'category' field
 const foodItems = [
   { id: 1, name: 'Chow Mein', description: 'Stir-fried noodles with veggies', price: 'Rs 10', img: maggy, category: 'Chinese', img1: maggy, img2: maggy },
   { id: 2, name: 'Spring Rolls', description: 'Crispy rolls with vegetable filling', price: 'Rs 6', img: maggy, category: 'Chinese', img1: maggy, img2: maggy },
@@ -38,15 +37,14 @@ const App = () => {
     setShowDropdown(false);
   };
 
-  // Filter food items based on the selected category
   const filteredFoodItems = foodItems.filter((food) => food.category === selectedCategory);
 
   return (
     <div className="restaurant-page">
       <div className="first">
         <div className="left" data-aos="fade-right">
-          <h3>Flame And Fire</h3>
-          <p>123 Main Street, Nagpur</p>
+          <h3>Laxmi Family & Garden Restaurant</h3>
+          <p>Dighori Ring Road, Kharbi, Nagpur </p>
           <div className="social-links">
             <Link to="https://wa.me/9284614144"><FaWhatsapp color='green' size={'21px'} /></Link>
             <Link to="https://www.instagram.com"><FaInstagram color='red' size={'21px'} /></Link>
